@@ -89,47 +89,22 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1410px) {
-  body {
-    font-family: "TBChibiRGoPlusKPro Regular";
-    font-size: 0.7092198582vw;
-    font-weight: bold !important;
-    line-height: 1.5;
-    color: #000;
-    letter-spacing: -1px;
-    background-color: #f0ebe5;
-    background-image: url(../img/mainbg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-@media only screen and (max-width: 1410px) and (max-width: 768px) {
-  body {
-    min-height: calc(100% - 20vw);
-  }
-}
 body {
   font-family: "TBChibiRGoPlusKPro Regular";
-  font-size: 10px;
+  font-size: 0.7092198582vw;
   font-weight: bold !important;
   line-height: 1.5;
   color: #000;
   letter-spacing: -1px;
   background-color: #f0ebe5;
   background-image: url(../img/mainbg.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 1410px;
-  background-position-x: 50%;
 }
 @media only screen and (max-width: 768px) {
   body {
     min-height: calc(100% - 20vw);
   }
-}
-
-main {
-  overflow-x: hidden;
 }
 
 a {
@@ -186,14 +161,16 @@ ul {
 }
 
 body {
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
   max-width: 1410px;
   margin: 0 auto;
   position: relative;
 }
 
-.banner {
-  overflow: hidden;
-}
 .banner .b-img {
   display: flex;
   justify-content: space-between;
@@ -308,6 +285,26 @@ body {
   position: absolute;
   top: 0;
   right: 110px;
+}
+
+.img-item-top-c {
+  background: url(../img/banner-img-item01.png) no-repeat;
+  width: 191px;
+  height: 169px;
+  top: 276px;
+  left: 413px;
+  z-index: -1;
+  position: absolute;
+}
+
+.img-item-top-r {
+  background: url(../img/banner-img-item02.png) no-repeat;
+  width: 623px;
+  height: 490px;
+  top: -20px;
+  right: 0px;
+  z-index: -1;
+  position: absolute;
 }
 
 .tip-img-unform--second {
@@ -889,6 +886,24 @@ body {
   }
 }
 @media only screen and (max-width: 1410px) {
+  .img-item-top-c {
+    background: url(../img/banner-img-item01.png) no-repeat;
+    width: 13.5460992908vw;
+    height: 11.9858156028vw;
+    top: 19.5744680851vw;
+    left: 29.2907801418vw;
+    z-index: -1;
+    position: absolute;
+  }
+  .img-item-top-r {
+    background: url(../img/banner-img-item02.png) no-repeat;
+    width: 44.1843971631vw;
+    height: 34.7517730496vw;
+    top: -1.4184397163vw;
+    right: 0vw;
+    z-index: -1;
+    position: absolute;
+  }
   .banner {
     overflow: hidden;
   }
