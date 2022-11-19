@@ -204,19 +204,6 @@ body {
   background-size: cover;
   position: absolute;
 }
-.banner .b-img--l .tip-img-unform {
-  z-index: -1;
-  position: absolute;
-}
-.banner .b-img--l .tip-img-unform--first {
-  display: inline-block;
-  background: url(../img/unform01.png) no-repeat;
-  width: 335px;
-  height: 324px;
-  bottom: -121px;
-  right: -88px;
-  background-size: cover;
-}
 .banner .b-img--c {
   margin-top: 107px;
   position: relative;
@@ -285,6 +272,20 @@ body {
   position: absolute;
   top: 0;
   right: 110px;
+}
+
+.tip-img-unform {
+  z-index: -1;
+  position: absolute;
+}
+.tip-img-unform--first {
+  display: inline-block;
+  background: url(../img/unform01.png) no-repeat;
+  width: 335px;
+  height: 324px;
+  bottom: 44px;
+  left: 240px;
+  background-size: cover;
 }
 
 .img-item-top-c {
@@ -649,6 +650,9 @@ body {
   color: #362e2b;
   letter-spacing: 3px;
 }
+.schedule__contents .action-group .btn:hover {
+  color: red;
+}
 
 .footer {
   margin-top: 181px;
@@ -940,19 +944,6 @@ body {
     background-size: cover;
     position: absolute;
   }
-  .banner .b-img--l .tip-img-unform {
-    z-index: -1;
-    position: absolute;
-  }
-  .banner .b-img--l .tip-img-unform--first {
-    display: inline-block;
-    background: url(../img/unform01.png) no-repeat;
-    width: 23.7588652482vw;
-    height: 22.9787234043vw;
-    bottom: -8.5815602837vw;
-    right: -6.2411347518vw;
-    background-size: cover;
-  }
   .banner .b-img--c {
     margin-top: 7.5886524823vw;
     position: relative;
@@ -1223,6 +1214,21 @@ body {
     font-size: 1.134751773vw;
     line-height: 1.2;
     letter-spacing: 0.03em;
+  }
+}
+@media only screen and (max-width: 1410px) {
+  .tip-img-unform {
+    z-index: -1;
+    position: absolute;
+  }
+  .tip-img-unform--first {
+    display: inline-block;
+    background: url(../img/unform01.png) no-repeat;
+    width: 23.7588652482vw;
+    height: 22.9787234043vw;
+    bottom: 3.1205673759vw;
+    left: 17.0212765957vw;
+    background-size: cover;
   }
 }
 @media only screen and (max-width: 1410px) {
@@ -1633,6 +1639,18 @@ body {
     }
   }
 }
+.image-hover:hover {
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  color: red;
+}
+
 .btn-white {
   background-color: #ffffff;
 }
@@ -1658,6 +1676,11 @@ body {
   border: 2px solid #59493f;
   border-radius: 50px;
   position: relative;
+  transition: all 0.3s ease;
+}
+.btn-default:hover {
+  background-color: #e4dcd3;
+  color: #000000;
 }
 .btn-default .title {
   font-weight: bold;
@@ -1681,6 +1704,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
+}
+.btn-corner:hover {
+  color: red;
 }
 .btn-corner--medium {
   background: url(../img/btn-corner-m-bg.png) no-repeat;
