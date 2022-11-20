@@ -17,55 +17,16 @@
 </head>
 
 <body id="home">
-    <main class="l-main">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="full-container flex just-space-between">
             <button class="nav-hamburger on" name="menu" aria-label="toggle nav" id="btn_hamburger">
                 <div class="nav-hamburger__line">
                     <div class="nav-hamburger__lineBody"></div>
                 </div>
             </button>
-            
-            <div class="container">
-                <span class="l-home-concsept__shape-1-pc js-module-particle tip-img-unform tip-img-unform--first" data-unyo="true" data-nomouse="true"></span>
-
-                <section class="banner l-home-concept">
-                    <div>
-                        <div class="b-img">
-                            <div class="b-img--l l-home-kv__choco__11 image-hover">
-                                <span class="tip-img-top"></span>
-                                <span class="tip-img-bottom"></span>
-                            </div>
-                            <div class="b-img--c">
-                                <span class="l-home-kv__choco__1 tip-img-top"></span>
-                                <span class="l-home-kv__choco__2 tip-img-bottom"></span>
-                            </div>
-                            <div class="b-img--r">
-                                <div class="b-img--r__first image-hover l-home-kv__choco__13"></div>
-                                <div class="b-img--r__second image-hover l-home-kv__choco__12"></div>
-                                <span class="tip-img-bottom"></span>
-                            </div>
-                        </div>
-                        <div class="top-desc">
-                            お釈迦様の身長は約4.8ｍも<br />あったんだって！<br />
-                            クラスじゃ一番後ろだね！
-                        </div>
-                    </div>
-                    
-                    <div class="b-action">
-                        <button class="btn-default flex btn-white">
-                            <span class="span-group flex just-space-between items-center">
-                                <span class="title">善楽寺からのお知らせ</span>
-                                <span class="identifier"></span>
-                                <span class="date">2022.04.10</span>
-                                <span class="description">花まつり～奏楽会～</span>
-                            </span>
-                            <span>詳細へ</span>
-                        </button>
-                    </div>
-                    <div class="img-item-top-c"></div>
-                    <div class="img-item-top-r"></div>
-                </section>
-                
-                <nav class="nav js-nav open nav-menu">
+            <nav class="nav nav-menu header--block__l">
+                <div>
                     <div class="nav__content">
                         <div class="nav-t__block">
                             <a href="#" class="header__logo"></a>
@@ -96,12 +57,18 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="nav__desc">
-                        <h4>Blog</h4>
-                        <p>善くんの<br />つぶやき堂</p>
-                    </div>
-                </nav>
-            
+                </div>
+                
+                <div class="nav__desc">
+                    <h4>Blog</h4>
+                    <p>善くんの<br />つぶやき堂</p>
+                </div>
+            </nav>   
+            <div class="header--block__r flex">
+                <div class="top-desc">
+                    お釈迦様の身長は約4.8ｍも<br />あったんだって！<br />
+                    クラスじゃ一番後ろだね！
+                </div>
                 <div class="nav__sns">
                     <ul class="p-sns__ul tate">
                         <li class="p-sns__ul__li">
@@ -119,11 +86,67 @@
                     </ul>
                 </div>
             </div>
-            
-            <a href="#introduction" class="btn-scroll-down"><span></span></a>
+        </div>
+    </header>
 
-            <section id="introduction" class="introduction">
-                <div class="container flex">
+    <!-- MAIN -->
+    <main class="l-main">
+        <!-- BANNER SECTION -->
+        <section class="banner l-home-kv">
+            <div class="full-container">
+                <div class="l-home-kv__inner">
+                    <div class="l-home-kv__choco">
+                        <div class="l-home-conceptx__shape-3-pc js-module-particle" data-unyo="true" data-nomouse="true">
+                            <div class="p-choco-item p-choco-item--4"></div>
+                        </div>
+                        <div class="l-home-kv__choco__1">
+                            <div class="p-choco-item p-choco-item--1"></div>
+                        </div>
+                        <div class="l-home-kv__choco">
+                            <div class="p-choco-item p-choco-item--2"></div>
+                        </div>
+                        <div class="l-home-kv__choco">
+                            <div class="p-choco-item p-choco-item--3"></div>
+                        </div>
+                        <div class="l-home-kv__choco__5">
+                            <div class="p-choco-item p-choco-item--5"></div>
+                        </div>
+                        <div class="l-home-kv__choco__6">
+                            <div class="p-choco-item p-choco-item--6"></div>
+                        </div>
+                        <div class="l-home-kv__choco__7">
+                            <div class="p-choco-item p-choco-item--7"></div>
+                        </div>
+                        <div class="l-home-kv__choco__8">
+                            <div class="p-choco-item p-choco-item--8"></div>
+                        </div>
+                        <div class="l-home-kv__choco__9">
+                            <div class="p-choco-item p-choco-item--9"></div>
+                        </div>
+                    </div>
+                    <div class="l-home-kv__scroll">
+                        <a href="#introduction" class="scroll-down">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- INTRO SECTION -->
+        <section id="introduction" class="introduction">
+            <div class="container">
+                <div class="selected-schedule-action">
+                    <button class="btn-default flex btn-white">
+                        <span class="span-group flex just-space-between items-center">
+                            <span class="title">善楽寺からのお知らせ</span>
+                            <span class="identifier"></span>
+                            <span class="date">2022.04.10</span>
+                            <span class="description">花まつり～奏楽会～</span>
+                        </span>
+                        <span>詳細へ</span>
+                    </button>
+                </div>
+                <div class="introduction__content">
                     <div class="description">
                         <p>
                             四国第三十番霊場 善楽寺
@@ -143,94 +166,93 @@
                         <span>善楽寺縁起</span><br />
                         <h2>善楽寺について</h2>
                     </div>
-                    <span class="l-home-kv__choco__3 tip-img-unform--third"></span>
                 </div>
-
                 <div class="ribbon"></div>
-            </section>
-
-            <section class="services">
-                <div class="container">
-                    <div>
-                        <div class="service-group flex just-center">
-                            <div class="service-item-wrapper">
-                                <div class="service-group__item flex flex-column">
-                                    <img class="image-hover" src="./assets/img/service01.png" alt="">
-                                    <h3>祈願・供養の<br />御案内</h3>
-                                    <p>
-                                        厄払い・身払い、水子供養<br />
-                                        など、善楽寺では様々な供<br />
-                                        養や祈祷を行っています。<br />
-                                        また、本堂と大師堂に護摩<br />
-                                        木がございます。
-                                    </p>
-                                    <a href="#" class="btn-corner btn-corner--small l-home-kv__choco__6">
-                                        詳細へ
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="service-item-wrapper">
-                                <div class="service-group__item flex flex-column">
-                                    <img class="image-hover" src="./assets/img/service02.png" alt="">
-                                    <h3>年間行事</h3>
-                                    <p>
-                                        初祭り、節分会、花まつり<br />
-                                        、薬師堂法要、白岩不動法<br />
-                                        要など、折々に独自の行事<br />
-                                        がございます。
-                                    </p>
-                                    <a href="#" class="btn-corner btn-corner--small l-home-kv__choco__7">
-                                        詳細へ
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="service-item-wrapper">
-                                <div class="service-group__item flex flex-column">
-                                    <img class="image-hover" src="./assets/img/service03.png" alt="">
-                                    <h3>境内案内</h3>
-                                    <p>
-                                        交通の便がよく境内には階<br />
-                                        段も少ないことから、お遍<br />
-                                        路さんはもちろんのこと地<br />
-                                        元の方や観光で来られた方<br />
-                                        等たくさんの方が参拝に訪<br />
-                                        木がございます。
-                                    </p>
-                                    <a href="#" class="btn-corner btn-corner--small l-home-kv__choco__8">
-                                        詳細へ
-                                    </a>
-                                </div>
-                            </div>
+                
+                <div class="l-home-concept__img-3 js-module-particle tip-img-unform--third"></div>
+            </div>
+        </section>
+        <!-- SERVICE SECTION -->
+        <section class="services">
+            <div class="container">
+                <div class="service-group flex just-space-between">
+                    <div class="service-item-wrapper">
+                        <div class="service-group__item flex flex-column">
+                            <img class="image-hover" src="./assets/img/service01.png" alt="">
+                            <h3>祈願・供養の<br />御案内</h3>
+                            <p>
+                                厄払い・身払い、水子供養<br />
+                                など、善楽寺では様々な供<br />
+                                養や祈祷を行っています。<br />
+                                また、本堂と大師堂に護摩<br />
+                                木がございます。
+                            </p>
+                            <a href="#" class="btn-corner btn-corner--small l-home-kv__choco__6">
+                                詳細へ
+                            </a>
                         </div>
-                    </div>            
-                </div>
-            </section>
-
-            <section class="schedule">
-                <div class="container">
-                    <div class="flex just-center items-center sp-flex-direction">
-                        <h3>善楽寺からの<br class="sp"/>お知らせ</h3>
-                        <div class="schedule__contents">
-                            <div class="ribbon"></div>
-                            <ul class="schedule-list">
-                                <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
-                                <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
-                                <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
-                                <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
-                                <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
-                            </ul>
-                            <div class="action-group flex just-end">
-                                <a href="#" class="btn">お知らせの一覧へ</a>
-                            </div>
+                    </div>
+                    <div class="service-item-wrapper">
+                        <div class="service-group__item flex flex-column">
+                            <img class="image-hover" src="./assets/img/service02.png" alt="">
+                            <h3>年間行事</h3>
+                            <p>
+                                初祭り、節分会、花まつり<br />
+                                、薬師堂法要、白岩不動法<br />
+                                要など、折々に独自の行事<br />
+                                がございます。
+                            </p>
+                            <a href="#" class="btn-corner btn-corner--small l-home-kv__choco__7">
+                                詳細へ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-item-wrapper">
+                        <div class="service-group__item flex flex-column">
+                            <img class="image-hover" src="./assets/img/service03.png" alt="">
+                            <h3>境内案内</h3>
+                            <p>
+                                交通の便がよく境内には階<br />
+                                段も少ないことから、お遍<br />
+                                路さんはもちろんのこと地<br />
+                                元の方や観光で来られた方<br />
+                                等たくさんの方が参拝に訪<br />
+                                木がございます。
+                            </p>
+                            <a href="#" class="btn-corner btn-corner--small l-home-kv__choco__8">
+                                詳細へ
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-        <!-- </div> -->
+            </div>
+        </section>
+        <!-- SCHEDULE SECTION -->
+        <section class="schedule">
+            <div class="container">
+                <div class="flex just-space-between items-center sp-flex-direction">
+                    <h3>善楽寺からの<br class="sp"/>お知らせ</h3>
+                    <div class="schedule__contents">
+                        <div class="ribbon"></div>
+                        <ul class="schedule-list">
+                            <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
+                            <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
+                            <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
+                            <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
+                            <li><span class="date">2022.04.10</span><span class="description">花まつり～奏楽会～花まつり～奏楽会～花まつり～奏楽会～</span></li>
+                        </ul>
+                        <div class="action-group flex just-end btn-small">
+                            <a href="#" class="btn">お知らせの一覧へ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="container relative">
+        <div class="full-container">
             <div class="action-group">
                 <a href="#" class="btn-default btn-medium btn-white">善楽寺へのアクセスはこちらから</a>
             </div>
@@ -242,7 +264,7 @@
                         <h3>善 楽 寺</h3>
                     </div>
                 </div>
-                <div class="flex just-center items-center">
+                <div class="flex just-center items-center footer__blocks-wrapper">
                     <div class="footer-block">
                         <address>
                             高知県高知市一宮しなね2-23-11　善楽寺<br />
@@ -290,7 +312,6 @@
             </p>
         </div>
         <div class="page-up"></div>
-
     </footer>
 
     <script src="./assets/js/app.js"></script>
