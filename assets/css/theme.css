@@ -185,7 +185,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .header .full-container {
-    padding: 0 5%;
+    padding: 0 2.4739583333vw;
   }
 }
 .header .full-container .nav__sns {
@@ -247,7 +247,7 @@ ul {
     position: fixed;
     top: 4.8177083333vw;
     padding: 13px;
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
     border-bottom-left-radius: min(200px, 14.1843971631vw);
     border-bottom-right-radius: min(200px, 14.1843971631vw);
@@ -420,11 +420,13 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .header .full-container .top-desc {
+    width: 42.7083333333vw;
+    height: 16.015625vw;
     right: 12.6302083333vw;
     top: min(215px, 15.2482269504vw);
-    padding: 4.0364583333vw 2.6041666667vw;
-    font-size: 1.3020833333vw;
-    line-height: 1.953125vw;
+    padding: 5.3385416667vw 3.515625vw;
+    font-size: 1.953125vw;
+    line-height: 2.6041666667vw;
     position: absolute;
   }
 }
@@ -868,7 +870,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .schedule__contents ul li {
-    font-size: 1.8229166667vw;
+    font-size: 2.34375vw;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -889,7 +891,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .schedule__contents .action-group .btn {
-    font-size: 2.34375vw;
+    font-size: 2.6041666667vw;
   }
 }
 
@@ -953,7 +955,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .footer__content address {
-    font-size: 1.6927083333vw;
+    font-size: 2.2135416667vw;
   }
 }
 .footer__content ul li {
@@ -965,7 +967,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .footer__content ul li {
-    font-size: 1.8229166667vw;
+    font-size: 2.2135416667vw;
     margin-bottom: 2.34375vw;
   }
 }
@@ -989,8 +991,12 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .footer .footer__blocks-wrapper {
+    flex-flow: column;
     margin-top: 13.0208333333vw;
   }
+}
+.footer .footer__blocks-wrapper .footer-block {
+  min-width: 45.5729166667vw;
 }
 .footer .page-up {
   background: url("../img/pageup.png") no-repeat;
@@ -1001,6 +1007,11 @@ ul {
   cursor: pointer;
   top: max(-35px, -2.4822695035vw);
   position: absolute;
+}
+@media only screen and (max-width: 768px) {
+  .footer .page-up {
+    bottom: 0;
+  }
 }
 
 .copyright {
@@ -1183,7 +1194,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .btn-default {
-    font-size: 2.0833333333vw;
+    font-size: 2.34375vw;
     padding: 2.0833333333vw 4.5572916667vw;
   }
 }
@@ -1258,6 +1269,11 @@ ul {
   border: min(4px, 0.2836879433vw) solid #59493f;
   letter-spacing: 0.05em;
   justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .btn-medium {
+    font-size: 2.8645833333vw;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
