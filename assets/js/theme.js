@@ -70,8 +70,10 @@ $(document).ready(function() {
     var topBtn = $('#pagetop');
     topBtn.hide();
 
+    var lastScrollTop = 0;
+
     //スクロールが100に達したらボタン表示
-    $(window).scroll(function() {
+    $(window).scroll(function(e) {
         if ($(this).scrollTop() > 100) {
             topBtn.fadeIn(0);
         } else {
@@ -81,11 +83,17 @@ $(document).ready(function() {
         getRibbonViewState();
         
         if (topH > 0 && ($(this).scrollTop() - topH) > 77) {
-            console.log(top);
             $('.btn-ribbon').css('top', `${top}px`);
         } else {
             $('.btn-ribbon').css('top', `${dTop}px`);
         }
+
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > lastScrollTop){
+        } else {
+            $('.btn-ribbon').css('top', `${top}px`);
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
     });
     //スクロールしてトップ
     topBtn.click(function() {
@@ -94,7 +102,7 @@ $(document).ready(function() {
         }, 1000);
         setTimeout(function() {
             location.reload();
-        }, 1500);
+        }, 3500);
         return false;
     });
     
@@ -103,10 +111,10 @@ $(document).ready(function() {
             .animate({
                 'right': '0px',
                 'top': '400px'
-            }, 1000, 'linear')
+            }, 0, 'linear')
             .animate({
                 'right': '0',
                 'top': '-2000px'
-            }, 'easeInExpo');
+            }, 3000, 'linear');
     });
 });
