@@ -91,22 +91,22 @@ $(document).ready(function() {
     topBtn.click(function() {
         $('body,html').animate({
             scrollTop: 0
-        }, 500);
+        }, 1000);
         setTimeout(function() {
             location.reload();
-        }, 3500);
+        }, 1500);
         return false;
     });
-
+    
     $('#pagetop').click(function() {
         $('#pagetop')
             .animate({
                 'right': '0px',
                 'top': '400px'
-            }, 0, 'linear')
+            }, 1000, 'linear')
             .animate({
                 'right': '0',
                 'top': '-2000px'
-            }, 1000, 'linear');
+            }, 'easeInExpo');
     });
 });

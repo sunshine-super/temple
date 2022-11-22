@@ -1061,10 +1061,10 @@ ul {
 .footer #pagetop {
   background: url("../img/pageup.png") no-repeat;
   width: min(149px, 10.5673758865vw);
-  height: min(446px, 31.6312056738vw);
+  height: min(952px, 67.5177304965vw);
   background-size: cover;
   cursor: pointer;
-  bottom: 0;
+  bottom: max(-506px, -35.8865248227vw);
   right: 0;
   position: fixed;
   z-index: 1000;
@@ -1075,8 +1075,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .footer #pagetop {
-    bottom: 0;
-    top: inherit;
+    bottom: -35.9375vw;
   }
 }
 
