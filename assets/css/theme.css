@@ -422,11 +422,14 @@ ul {
   }
 }
 .header .full-container .top-desc {
+  display: flex;
+  align-items: center;
   background: url(../img/t-desc-bg.png) no-repeat;
   width: min(428px, 30.3546099291vw);
   height: min(161px, 11.4184397163vw);
   background-size: cover;
   padding: min(55px, 3.9007092199vw) min(40px, 2.8368794326vw);
+  padding-top: min(85px, 6.0283687943vw);
   font-size: min(16px, 1.134751773vw);
   line-height: min(27px, 1.914893617vw);
   letter-spacing: min(3px, 0.2127659574vw);
@@ -442,6 +445,7 @@ ul {
     font-size: 2.4739583333vw;
     line-height: 3.90625vw;
     padding: 6.640625vw 5.2083333333vw;
+    padding-top: 10.546875vw;
     position: absolute;
   }
 }
@@ -1075,7 +1079,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
   .footer #pagetop {
-    bottom: -18.8802083333vw;
+    bottom: -10.15625vw;
   }
 }
 
