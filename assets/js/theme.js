@@ -107,6 +107,6 @@ $(document).ready(function() {
             .animate({
                 'right': '0',
                 'top': '-2000px'
-            }, 6000, 'linear');
+            }, 1000, 'linear');
     });
 });
