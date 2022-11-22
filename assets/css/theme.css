@@ -194,6 +194,11 @@ ul {
   position: relative;
 }
 @media only screen and (max-width: 768px) {
+  .header .full-container .nav__sns {
+    margin-top: 67.7083333333vw;
+  }
+}
+@media only screen and (max-width: 768px) {
   .header .full-container .nav__sns .p-sns__ul {
     display: flex;
     gap: 1.3020833333vw;
@@ -433,7 +438,7 @@ ul {
     width: 55.7291666667vw;
     height: 20.9635416667vw;
     left: 37.7604166667vw;
-    top: 33.203125vw;
+    top: 0;
     font-size: 2.4739583333vw;
     line-height: 3.90625vw;
     padding: 6.640625vw 5.2083333333vw;
@@ -503,14 +508,13 @@ ul {
   width: min(25px, 1.7730496454vw);
   height: min(14px, 0.9929078014vw);
   margin-top: min(89px, 6.3120567376vw);
-  margin-left: min(15px, 1.0638297872vw);
+  margin-left: min(6px, 0.4255319149vw);
 }
 @media only screen and (max-width: 768px) {
   .scroll-down span.arrow-down {
-    width: 3.2552083333vw;
-    height: 1.8229166667vw;
-    margin-top: 11.5885416667vw;
-    margin-left: 1.953125vw;
+    position: absolute;
+    margin-top: 11.0677083333vw;
+    margin-left: 1.6927083333vw;
   }
 }
 
@@ -1063,6 +1067,7 @@ ul {
   bottom: 0;
   right: 0;
   position: fixed;
+  z-index: 1000;
   transition: all 0.3s ease;
 }
 .footer #pagetop:hover {
