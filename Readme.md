@@ -7,9 +7,9 @@
 19 ~ 5 Bidding for assignments (More than 15 bidding for assignments)
 5 ~ 12 Research on new technologies and manage Git repository
 
-	- Introduction, Main Logic, Features.
-	- About worldwide trends.
-	- Find and analyze about the projects for over 1 template.
+- Introduction, Main Logic, Features.
+- About worldwide trends.
+- Find and analyze about the projects for over 1 template.
 
 ```
 
